@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %} Map {% endblock title %}
+
+{% block content %}
+    <br>
+    <hr>
+
+    <div class="btn-group open ">
+        <a class="btn btn-primary" href="register"><i class="fa fa-user fa-fw"></i> {{user}}</a>
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="deconnexion">
+            <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+
+        <ul class="dropdown-menu">
+            <li><a href="deconnexion"><i class="fa fa-unlock"></i>Logout</a></li>
+        </ul>
+        </a>
+    </div>
+
+    <!-- Modal -->
+    <hr>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">distance to {{ destination }}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            {{ distance | linebreaks }}
+          </div>
+          </div>
+        </div>
+      </div>
+
+    {{ map | safe }}
+
+    <img src="{{ image }}"/>
+
+    </div>
+{% endblock content %}
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+
+ <html>
+ <head>
+ 	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+ 	<link rel="stylesheet" type="text/css" href="{% static 'js/bootstrap.min.js' %}>"
+ 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+ 	<title>user-registration</title>
+ </head>
+ <body>
+ 
+    <div class="container">
+    	<div class="row">
+    	  <div class="col-md-7">
+      		<h1 class="text-left ">Farmer Registration form</h1>
+      		<p class="text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             </p>
+        </div>
+           <div class="col-md-5">
+           	<div class="row">
+           	   <div class="col-md-6">
+           	   	 <h3 class="text-left">Registration Form</h3>
+           	   </div>
+           	   <div class="col-md-6">
+           	   	<span class="glyphicon glyphicon-pencil"></span>
+           	   </div>
+           	   <hr>
+               <div class="row">
+               	 <label class="label col-md-2 control-label "> E-mail</label>
+                 <div class="col-md-10">
+               	 	<input type="Email" class="form-control" name="Email" placeholder="E-mail"> 
+               	 </div>
+                </div>
+
+                <div class="row">
+               	 <label class="label col-md-2 control-label "> Password</label>
+                 <div class="col-md-10">
+               	 	<input type="password" class="form-control" name="password" placeholder="password"> 
+               	 	<input type="checkbox" name=""><small>Remmeber me !</small>
+               	 </div>
+                </div>
+                <div class="row">
+               	 <label class="label col-md-2 control-label "> Name</label>
+                 <div class="col-md-4">
+               	 	<input type="text" class="form-control" name="Name" placeholder="Name"> 
+               	 </div>
+              <!--   </div>
+                <div class="row"> -->
+               	 <label class="label col-md-2 control-label "> Telephone</label>
+                 <div class="col-md-4">
+               	 	<input type="text" class="form-control" name="phonenumber" placeholder="Phone Number"> 
+               	 </div>
+                </div>
+                
+                <div class="row">
+               	  <label class="label col-md-2 control-label "> Gender</label>
+                 <div class="col-md-4">
+               	 	<input type="radio"  name="gn" value="male"> 
+               	 	<small>Male</small>
+               	 	<input type="radio"  name="gn" value="female"> 
+               	 	<small>Female</small>
+               	 </div>
+               	  <label class="label col-md-2 control-label "> Age</label>
+                 <div class="col-md-4">
+               	 	<input type="date" class="form-control" name="dateofbirth"> 
+               	 </div>
+                </div>
+                <div class="row">
+                	<label class="label col-md-2 control-label "> Country</label>
+                 <div class="col-md-4">
+               	 	<input type="text" class="form-control" name="country" placeholder="country"> 
+               	 </div>
+                	<label class="label col-md-2 control-label">State
+                	</label>
+                	<div class="col-md-4">
+                	<select class="form-control">
+                		<option>Enugu </option>
+                		<option>Abakalike </option>
+                		<option>Anambra </option>
+                		<option>Onintsa </option>
+                	</select>
+                   </div>
+           </div>
+           		<a href=""><div class="btn btn-info">Submit</div></a>
+           		<a href=""><div class="btn btn-warning">Cancel</div></a>
+           	</div>
+           </div>
+    	  
+    	</div>
+    </div>
+ </body>
+ </html> 

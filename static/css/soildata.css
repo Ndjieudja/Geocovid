@@ -1,0 +1,103 @@
+.soil-container{
+	margin: 0px;
+	padding: 0px;
+	margin-left: 30px;
+    margin-top: 100px;
+    margin-right: 80px;
+
+    
+}
+
+body{
+	 background-image: url("../img/agrictect.jpg");
+	 background-size: cover;
+	 background-attachment: fixed;
+	 font-family: new time roman;
+
+}
+
+h1{
+	font-size: 40px;
+	color:white;
+	
+}
+p{
+	font-size: 17px;
+	text-decoration-color:  #ed1847;
+}
+h3{
+	font-size: 20px;
+	color: white;
+}
+.col-md-6{
+  margin-top: 0px;
+  box-shadow: 2px 15px 10px 10px lightgreen;
+  opacity: unset;
+  border-radius: 2%;
+  background-image: url("../img/agrictect.jpg");
+  background-size: cover;
+
+
+}
+
+.label{
+	font-weight: normal;
+	margin-top: 15px;
+	color: white;
+	font-size: 25px;
+}
+.form-control{
+	background: transparent;
+	border-radius: 4px;
+	border: 0px;
+	border-bottom: 2px solid lightgreen;
+	margin-top: 15px;
+	font-size: 25px;
+	height: 50px;
+	color: red;
+
+}
+
+
+input[type="number"]{
+	margin-top: 8px; 
+
+}
+
+
+.btn-info{
+	margin-top: 20px;
+	font-size: 18px;
+	width: 120px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+.btn-warning{
+	margin-top: 20px;
+	font-size: 18px;
+	width: 120px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+
+.section_subtitle{
+		
+		line-height: 1;
+		text-transform: uppercase;
+		color: #aaaaaa;
+		border-left: 3px solid #bfa67a;
+		
+		
+    }
+.section_main_title{
+	
+	font-size: 30px;
+	line-height: 1.27;
+	font-weight: 300;
+
+}
+
+ .section_main_title strong {
+    font-weight: 600;
+}

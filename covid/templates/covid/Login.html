@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load crispy_forms_tags %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>GeoCovid | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     {% if error %}
+        <p><strong>Utilisateur inexistant ou mauvais de mot de passe.</strong></p>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+        Vous êtes connecté, {{ user.username }} !
+        <a href="deconnexion" > Logout </a>
+        {% else %}
+        <div class="container"/>
+        <div class="card card-container">
+            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+            <center><br><br><br><br><br><br><br><img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" width="300" height="210"   />
+                <p id="profile-name" class="profile-name-card"></p>
+                <form method="post" action="">
+                       {% csrf_token %}
+                       {{ form | crispy }}
+                    <br><button type="submit" class="btn btn-primary"> confirm </button>
+                </form>
+            </center>
+        {% endif %}
+
+    <br>
+            <center>
+            <br>first connection ?
+                <a href="register" > Create account </a>
+        </br>
+
+
+</body>
+</html>

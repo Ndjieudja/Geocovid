@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:tahoma;
+}
+
+body{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #71b7e6,#9b59bb);
+	padding: 10px;
+    
+
+}
+.container{
+	max-width: 700px;
+    width: 70%;
+    padding: 20px 30px;
+    border-radius: 5px;
+
+}
+
+.container .title{
+	font-size: 25px;
+	font-weight: 400; 
+	position: relative;
+}
+.container .title::before{
+   content:'';
+   position:absolute;
+   height: 3px;
+   width: 30px;
+   left: 0;
+   bottom: 0;
+   background:#9b59bb; 
+}
+
+.container form .expert-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 0 6px 0 ;
+}
+
+form .expert-details .input-box{
+	margin-bottom: 15px;
+	width: calc(100% / 2-20px );
+}
+.expert-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.expert-details .input-box input{
+	font-weight: 500;
+	margin-bottom: 5px;
+	display: block;
+}
+.expert-details .input-box{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px; 
+}
+
+.expert-details .input-box:focus,
+.expert-details input:focus{
+
+
+}
